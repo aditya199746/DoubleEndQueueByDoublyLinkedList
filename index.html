@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <!-- <div class="container">
         <h1>Double-Ended Queue Visualization</h1>
         <div class="controls">
             <button id="enqueueFront">Enqueue Front</button>
@@ -19,7 +19,15 @@
         </div>
         <div id="dequeContainer"></div>
     </div>
+    <script src="script.js"></script> -->
+    <div id="doubleEndedQueue"></div>
     <script src="script.js"></script>
+    <script>
+        // Ensure the function runs when loaded in standalone mode
+        if (typeof window.renderMergeSortApp === "function") {
+            window.renderMergeSortApp("doubleEndedQueue");
+        }
+    </script>
 </body>
 
 </html>
